@@ -14,12 +14,10 @@ const Hero = (props: Props) => {
   })
 
   const handleGoto = () => {
-    //href to a url using button
-    window.location.href = "https://www.density.exchange"
+    window.open("https://play.google.com/store/apps/details?id=com.densityexchange&hl=en&gl=US" , "_blank")
   }
 
   const handleGotoVideo = () => {
-    //href to a url using button
     window.open("https://youtu.be/fbgtgDPz9VU?si=vUYwqu18gJlfYEBD", "_blank")
   }
 
@@ -33,7 +31,7 @@ const Hero = (props: Props) => {
       <div className="w-[100vw] flex justify-center">
         <div className="w-[90vw] md:w-[50vw]">
           <h2 data-aos="fade-right" className="text-center text-white font-[600] md:mt-[2rem] mt-[1rem] md:leading-[4.5vw] leading-[8vw] text-[7vw] md:text-[3.5vw]">
-            Its time to Trade the Future
+            Its time to Trade the <span className="text-yellow-300 animate-pulse hover:scale-2 font-bold">Future</span>
           </h2>
           <p data-aos="fade-up" className="text-center text-white opacity-50 font-[400] md:mt-[2rem] mt-[1rem] md:leading-[1.5vw] leading-[6vw] text-[4vw] md:text-[1vw]">
             Platform that helps developers find the best resources for their projects. We have a wide range of resources that can help you build your next project.

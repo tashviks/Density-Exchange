@@ -52,8 +52,7 @@ const FeatureDetails = (props: Props) => {
   }
 
   const handleGoto = () => {
-    //href to a url using button
-    window.location.href = "https://density.exchange"
+    window.open("https://play.google.com/store/apps/details?id=com.densityexchange&hl=en&gl=US" , "_blank")
   }
   return (
     <div>
@@ -77,7 +76,7 @@ const FeatureDetails = (props: Props) => {
             Get Started
           </p>
           <p className="text-white md:text-[1vw] text-[3vw] opacity-50 text-center mt-[0.5rem]">
-            Launch your next project in minutes, with our wide range of resources.
+            Start Trading Today
           </p>
           <button onClick={handleGoto} className="bg-[#0d0d0e] mt-[2rem] shadow-xl hover:scale-[1.03] transition-all duration-300 flex items-center justify-center font-medium text-white rounded-lg px-[20px] h-[50px] whitespace-nowrap">
             Launch App

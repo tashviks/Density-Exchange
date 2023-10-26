@@ -24,7 +24,7 @@ const NavBar = (props: Props) => {
           <p onClick={() => handleClick('feature')} className="text-white cursor-pointer">Features</p>
           <p onClick={() => handleClick('services')} className="text-white cursor-pointer">Services</p>
         </div>
-        <button onClick={handleGoto} className="bg-white md:flex items-center justify-center hidden font-medium text-gray rounded-lg px-[20px] h-[40px] whitespace-nowrap">Launch App</button>
+        <button onClick={handleGoto} className="bg-white md:flex items-center justify-center hidden font-medium text-gray rounded-lg px-[20px] h-[40px] whitespace-nowrap">Trade Now</button>
       </div>
     </div>
   )
