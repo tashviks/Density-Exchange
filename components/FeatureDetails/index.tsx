@@ -9,14 +9,14 @@ const FeatureDetails = (props: Props) => {
   const [Tabs, setTabs] = useState([
     {
       id: 1,
-      title: '90+ Resources',
+      title: '50+ currencies',
       icon: <FcApproval className="md:text-[1.8rem] text-[1.4rem]" />,
       selected: true,
       image: 'assets/feat-1.webp'
     },
     {
       id: 2,
-      title: 'Add your resource',
+      title: 'Select your resource',
       icon: <FcAddImage className="md:text-[1.8rem] text-[1.4rem]" />,
       selected: false,
       image: 'assets/feat-2.webp'
@@ -28,16 +28,7 @@ const FeatureDetails = (props: Props) => {
       selected: false,
       image: 'assets/feat-3.webp'
     },
-    {
-      id: 4,
-      title: 'Top Product every day',
-      icon: <FcIdea className="md:text-[1.8rem] text-[1.4rem]" />,
-      selected: false,
-      image: 'assets/lazyweb-ss-2.webp'
-    },
-
   ])
-
   const handleSelect = (id: number, image: string) => {
     setTabs(Tabs.map((tab) => {
       if (tab.id === id) {
@@ -50,7 +41,6 @@ const FeatureDetails = (props: Props) => {
     ))
     setSelectedImage(image)
   }
-
   const handleGoto = () => {
     window.open("https://play.google.com/store/apps/details?id=com.densityexchange&hl=en&gl=US" , "_blank")
   }
@@ -58,7 +48,7 @@ const FeatureDetails = (props: Props) => {
     <div>
       <div className="w-[100vw] bg-black md:p-[4rem] p-[2rem] mb-[2rem] mt-[4rem] flex-col flex items-center">
         <h1 data-aos="flip-up" className="text-white md:text-[3vw] text-[7vw] font-medium text-center md:mb-[2rem]">
-          Stay tuned. <br />Our feature buffet is just getting started!
+          Stay tuned. <br />Our trading buffet is just getting started!
         </h1>
       </div>
       <div className="w-[100vw] md:p-[4rem] p-[2rem] mb-[2rem] flex-col flex items-center">
@@ -70,7 +60,7 @@ const FeatureDetails = (props: Props) => {
         </p>
         <div data-aos="flip-up" className='min-h-[40vh] w-[90%] p-[2rem] flex flex-col items-center justify-center md:w-[50%] mt-[3rem] rounded-2xl bg-altGray'>
           <div className='bg-white glow-div-2'>
-            <Image src={'/assets/Logo.webp'} width={50} height={50} alt='Lazyweb Logo' />
+            <Image src={'/assets/Logo.webp'} width={50} height={50} alt='DensityLogo' />
           </div>
           <p className="text-white md:text-[1.5vw] text-[5vw]  font-medium text-center mt-[2rem]">
             Get Started
